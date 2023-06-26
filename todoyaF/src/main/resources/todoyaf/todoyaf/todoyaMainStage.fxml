@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoyaf.todoyaf.ControllCentre">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="800.0" fitWidth="800.0">
+               <image>
+                  <Image url="@../../assets/0_background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="122.0" fitWidth="738.0" layoutX="31.0" layoutY="33.0">
+               <image>
+                  <Image url="@../../assets/1_bg_0_title.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="455.0" fitWidth="265.0" layoutX="31.0" layoutY="308.0">
+               <image>
+                  <Image url="@../../assets/1_bg_2_tasks.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="736.0" layoutX="32.0" layoutY="190.0">
+               <image>
+                  <Image url="@../../assets/1_bg_1_taskStats.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="455.0" fitWidth="432.0" layoutX="336.0" layoutY="308.0">
+               <image>
+                  <Image url="@../../assets/1_bg_3_tasksMap.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="32.0" layoutY="308.0" prefHeight="455.0" prefWidth="265.0">
+            <fx:include fx:id="listManager" source="todoyaListManager.fxml" />
+            </VBox>
+            <VBox layoutX="124.0" layoutY="235.0" prefHeight="29.0" prefWidth="553.0">
+            <fx:include fx:id="statsManager" source="todoyaStatsView.fxml" />
+            </VBox>
+            <VBox layoutX="382.0" layoutY="368.0" prefHeight="340.0" prefWidth="340.0">
+            <fx:include fx:id="unicornManager" source="todoyaUnicornView.fxml" />
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</VBox>

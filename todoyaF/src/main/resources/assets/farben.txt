@@ -1,0 +1,7 @@
+#1e285a - dunkelblau
+#fee2b0 - gelb
+#f5b39d - orange
+#dd88a7 - rot
+#e3ffb2 - hellgrün
+#95ec8d - grün
+#80d9bd - blaugrün
