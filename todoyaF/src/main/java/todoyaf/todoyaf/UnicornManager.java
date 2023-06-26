@@ -87,6 +87,11 @@ public class UnicornManager extends BaseController {
         }
     }
     public void addNote() {
-        model.selectedTask.getValue().updateNote(notes.getText());
+        if(!(model.selectedTask.getValue()==null)) {
+            model.selectedTask.getValue().updateNote(notes.getText());
+        }
+        else{
+            notes.setText("No list available");
+        }
     }
 }
