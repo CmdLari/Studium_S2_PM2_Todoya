@@ -9,23 +9,33 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoyaf.todoyaf.ListManager">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todoyaf.todoyaf.ListManager">
    <children>
       <Pane prefHeight="455.0" prefWidth="265.0">
          <children>
-            <TextField fx:id="enterTask" layoutX="30.0" layoutY="37.0" prefHeight="25.0" prefWidth="158.0" />
-            <Button fx:id="add" layoutX="190.0" layoutY="37.0" mnemonicParsing="false" onAction="#addTask" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: ff88a7;" text="ADD" textFill="#fee2b0">
+            <TextField fx:id="enterTask" layoutX="30.0" layoutY="37.0" prefHeight="25.0" prefWidth="152.0" />
+            <Button fx:id="add" layoutX="185.0" layoutY="37.0" mnemonicParsing="false" onAction="#addTask" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: ff88a7;" text="ADD" textFill="#fee2b0">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
             <ListView fx:id="taskView" layoutX="25.0" layoutY="66.0" prefHeight="321.0" prefWidth="212.0" />
-            <ChoiceBox fx:id="completeCancel" layoutX="30.0" layoutY="392.0" onAction="#completeCancel" prefHeight="25.0" prefWidth="201.0" style="-fx-background-color: ff88a7;" />
-            <Label layoutX="36.0" layoutY="392.0" prefHeight="25.0" prefWidth="76.0" text="COMPLETE  CANCEL" textFill="#fee2b0">
+            <ChoiceBox fx:id="completeCancel" layoutX="32.0" layoutY="392.0" onAction="#completeCancel" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: ff88a7;" />
+            <Label layoutX="36.0" layoutY="392.0" prefHeight="25.0" prefWidth="68.0" text="COMPLETE |CANCEL" textFill="#fee2b0">
                <font>
-                  <Font name="System Bold" size="8.0" />
+                  <Font name="System Bold" size="7.0" />
                </font>
             </Label>
+            <Button fx:id="safe" layoutX="139.0" layoutY="392.0" mnemonicParsing="false" onAction="#saveList" prefHeight="25.0" prefWidth="40.0" style="-fx-background-color: ff88a7;" text="SAFE" textFill="#fee2b0">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="load" layoutX="182.0" layoutY="392.0" mnemonicParsing="false" onAction="#loadList" prefHeight="25.0" prefWidth="47.0" style="-fx-background-color: ff88a7;" text="LOAD" textFill="#fee2b0">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

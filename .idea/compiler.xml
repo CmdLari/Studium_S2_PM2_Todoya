@@ -9,8 +9,5 @@
         <module name="todoyaF" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="todoyaF" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

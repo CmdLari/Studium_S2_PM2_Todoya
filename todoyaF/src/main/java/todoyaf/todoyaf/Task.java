@@ -12,6 +12,11 @@ public class Task {
         this.note=STD_NOTE;
     }
 
+    public Task(String name, String note){
+        this.name=name;
+        this.note=note;
+    }
+
     public void updateNote(String newNote){
         this.note=newNote;
     }
